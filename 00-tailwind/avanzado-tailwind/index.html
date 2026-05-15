@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>avanzado-tailwind</title>
+  </head>
+  <body>
+    <!-- <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script> -->
+    <div>
+      <h1>Avanzado-tailwind</h1>
+      <h4 class="text-4xl">@apply</h4>
+      <button class="btn btn-red btn-scale">Confirm</button>
+    </div>
+    <div>
+      <h1>Avanzado-tailwind</h1>
+      <h4 class="text-4xl">@utility @theme</h4>
+      <div class="color-area container mx-auto container-w-h-100 border border-yellow-700 font-bold">color de texto inventado</div>
+      <p>párrafo de prueba @layer base</p>
+      <!-- Will look like a card, but with square corners -->
+      <div class="card rounded-none">@layer components</div>
+      <article class="prose prose-slate prose-lg">
+        <h3>Plugin tipografia</h3>
+        <p>texto para utilizar la tipografía del plugin</p>
+      </article>
+    </div>
+
+    <div class="bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
+      <div>
+        <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
+          <svg class="h-6 w-6 stroke-white" ...>
+            <!-- ... -->
+          </svg>
+        </span>
+      </div>
+      <h3 class="text-gray-900 dark:text-white mt-5 text-base font-medium tracking-tight">MODO DARK</h3>
+      <p class="text-gray-500 dark:text-white-400 mt-2 text-sm">
+        The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
+      </p>
+    </div>
+  </body>
+</html>
